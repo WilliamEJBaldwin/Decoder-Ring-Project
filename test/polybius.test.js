@@ -39,7 +39,7 @@ describe("polybius()", () => {
     it("decodes numeric pairs into letters.", () => {
       const message = "4424435342311113";
       const actual = polybius(message, false);
-      const expected = "tropical";
+      const expected = "trop(i/j)cal";
 
       expect(actual).to.equal(expected);
     });
@@ -56,7 +56,6 @@ describe("polybius()", () => {
       const message = "532443 4324 314333";
       const actual = polybius(message, false);
       const expected = "pro or con";
-
       expect(actual).to.equal(expected);
     });
   });
