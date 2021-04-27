@@ -46,7 +46,7 @@ const polybiusModule = (function () {
     if (!encode) {
       
       //Checks to make sure the input is even.
-      if (input.replace(" ", "").length % 2 > 0) return false;
+      if (input.replace(/\s+/g, '').length % 2 > 0) return false;
       
       //Sets up a loop going through as long as less than or equal to the input length.
       for (let i = 0; i <= input.length; i += 2) {
@@ -105,7 +105,7 @@ const polybiusModule = (function () {
     
     //Sets our solution to a formatted string from our array.
     solution = solutionArr.join("");
-
+    
     //Returns our solution!
     return solution;
   }
