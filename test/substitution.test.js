@@ -50,7 +50,7 @@ describe("substitution()", () => {
       const message = "the pearl is in the river";
       const alphabet = "msvpxdcanbikhgtrweyzqlojuf";
       const actual = substitution(message, alphabet);
-      const expected = "zax wxmek ny ng zax enlxe";
+      const expected = "zax rxmek ny ng zax enlxe";
 
       expect(actual).to.equal(expected);
     });
@@ -58,7 +58,7 @@ describe("substitution()", () => {
 
   describe("decoding a message", () => {
     it("decodes a message with the given alphabet.", () => {
-      const message = "ptpzbtao";
+      const message = "ptpzbthao";
       const alphabet = "tlakwvgoumesydnfzqphbcijrx";
       const actual = substitution(message, alphabet, false);
       const expected = "sasquatch";
